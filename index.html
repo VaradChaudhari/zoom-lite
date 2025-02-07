@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Zoom Lite - Video Call</h2>
+        <div id="video-container">
+            <video id="myVideo" autoplay muted></video>
+        </div>
+        <div id="controls">
+            <button id="toggleCamera">Toggle Camera</button>
+            <button id="toggleMic">Toggle Mic</button>
+        </div>
+        <div id="chat">
+            <input type="text" id="message" placeholder="Type message...">
+            <button id="sendMessage">Send</button>
+            <div id="messages"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
