@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://zoom-lite.onrender.com");
 const peer = new Peer();
 
 const videoContainer = document.getElementById("video-container");
